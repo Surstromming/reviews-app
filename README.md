@@ -1,6 +1,6 @@
 # reviews-app
 
-You need to have npm installed to run this app
+You need to have yarn or npm installed to run this app
 
 To get all dependencies run
 ````bash
