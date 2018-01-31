@@ -1,0 +1,65 @@
+@import '~settings';
+
+.review-card {
+    $this: &;
+
+    display: flex;
+    padding: 30px 0;
+
+    &__user {
+        width: 25%;
+    }
+
+    &__content {
+        width: 75%;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 22px;
+    }
+
+    &__icon {
+        display: block;
+        width: 60px;
+        height: 60px;
+        margin-top: 20px;
+    }
+
+    .rating-aspects + &__text {
+        margin-top: 20px;
+    }
+
+    &__travel-date {
+        font-size: 14px;
+        line-height: 1.5;
+        color: $color-warm-grey;
+        margin-top: auto;
+    }
+
+    &__text {
+        margin-bottom: 10px;
+    }
+
+    &__user-name {
+        font-weight: $weight-bold;
+        margin-top: 8px;
+    }
+
+    &__user-date {
+        font-size: 14px;
+        line-height: 1.5;
+        color: $color-warm-grey;
+    }
+
+    & + &,
+    &:first-child {
+        border-top: 1px solid $color-pale-grey;
+    }
+
+    &:last-child {
+        border-bottom: 1px solid $color-pale-grey;
+    }
+}

@@ -1,0 +1,15 @@
+@import '~settings';
+
+.rating-aspects {
+    $this: &;
+
+    &__title {
+        font-weight: $weight-black;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+    
+    &__list {
+        column-count: 2;
+    }
+}

@@ -1,0 +1,7 @@
+@import '~settings';
+
+.reviews-list {
+    $this: &;
+
+    padding: 0 40px;
+}

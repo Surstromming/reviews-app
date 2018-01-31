@@ -1,0 +1,8 @@
+$weight-regular: 400;
+$weight-bold: 700;
+$weight-black: 900;
+
+@mixin lato($weight: $weight-regular) {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: $weight;
+}

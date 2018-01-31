@@ -1,0 +1,9 @@
+@import '~settings';
+
+.reviews-container {
+    $this: &;
+
+    background-color: $color-white;
+    border: 1px solid $color-pale-grey;
+    margin-bottom: 75px;
+}

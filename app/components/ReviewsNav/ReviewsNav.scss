@@ -1,0 +1,29 @@
+@import '~settings';
+
+.reviews-header {
+    $this: &;
+    background-color: $color-white;
+    box-shadow: 0 2px 10px 0 $color-charcoal;
+    position: relative;
+    z-index: 1;
+}
+
+.reviews-nav {
+    $this: &;
+    display: flex;
+    align-items: stretch;
+    margin: 0 -15px;
+
+    &__item {
+        font-size: 14px;
+        @include lato($weight-bold);
+        color: $color-greyish-brown;
+        margin: 0 15px;
+        padding: 20px 0 15px;
+
+        &--active {
+            color: $color-navy;
+            border-bottom: 4px solid $color-mint;
+        }
+    }
+}

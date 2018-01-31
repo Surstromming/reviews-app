@@ -1,0 +1,37 @@
+@import '~settings';
+
+.radio-item {
+    $this: &;
+    font-size: 14px;
+    line-height: 1px;
+
+    &__input {
+        display: none;
+
+        &:checked ~ #{$this}__label:before {
+            background-image: url(~radio-button-checked.svg);
+        }
+    }
+
+    &__label {
+        display: flex;
+        align-items: flex-start;
+        line-height: 1.2;
+
+        &:before {
+            content: '';
+            display: block;
+            width: 16px;
+            height: 16px;
+            background-image: url(~radio-button.svg);
+            background-repeat: no-repeat;
+            background-position: 50%;
+            background-size: contain;
+            margin-right: 12px;
+        }
+    }
+
+    & + & {
+        margin-top: 20px;
+    }
+}

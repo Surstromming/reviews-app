@@ -1,0 +1,48 @@
+@import '~settings';
+
+.pagination {
+    $this: &;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+
+    &__button,
+    &__link {
+        width: 40px;
+        height: 40px;
+        background-image: $gradient-orange;
+        color: $color-white;
+        font-size: 14px;
+        line-height: 1;
+        @include lato($weight-bold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        appearance: none;
+        border: none;
+        user-select: none;
+        border-radius: 8px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    &__button {
+        width: 140px;
+    }
+
+    &__list {
+        flex-grow: 1;
+        padding: 0 40px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    &__link {
+        &:not(#{$this}__link--active) {
+            background-image: none;
+            color: $color-peach;
+        }
+    }
+}

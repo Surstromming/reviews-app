@@ -1,0 +1,56 @@
+@import '~settings';
+
+.reviews-info {
+    $this: &;
+    padding: 40px;
+
+    &__title {
+        margin-bottom: 35px;
+    }
+
+    &__subtitle {
+        font-weight: $weight-black;
+        line-height: 1.2;
+        margin-bottom: 16px;
+    }
+
+    &__quantity {
+        color: $color-warm-grey;
+    }
+
+    &__inner {
+        display: flex;
+    }
+
+    &__general {
+        width: 25%;
+    }
+
+    &__aspects {
+        width: 75%;
+        padding: 0 20px;
+    }
+}
+
+.rating-box {
+    $this: &;
+    color: $color-white;
+    background-image: $gradient-orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    @include lato($weight-black);
+    font-size: 28px;
+    line-height: 1;
+
+    &--general {
+        width: 160px;
+        height: 160px;
+        border-radius: 20px;
+        font-size: 72px;
+        line-height: .9;
+    }
+}

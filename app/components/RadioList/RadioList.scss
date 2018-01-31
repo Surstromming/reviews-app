@@ -1,0 +1,13 @@
+@import '~settings';
+
+.radio-list {
+    $this: &;
+
+    &__inner {
+        margin-top: 32px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+    }
+}
